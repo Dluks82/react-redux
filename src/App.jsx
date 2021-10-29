@@ -6,6 +6,7 @@ import First from "./components/basics/First";
 import WithParam from "./components/basics/WithParam";
 import Fragment from "./components/basics/Fragment";
 import Family from "./components/basics/Family";
+import FamilyMember from "./components/basics/FamilyMember";
 
 export default (_) => {
   return (
@@ -13,8 +14,12 @@ export default (_) => {
       <h1>React fundaments 2</h1>
 
       <div className="Cards">
-        <Card title="#5 - Family Member" color="#C14644">
-          <Family family="Oliveira"></Family>
+        <Card title="#5 - Children Components" color="#C14644">
+          <Family family="Oliveira">
+            <FamilyMember name="Diogo" />
+            <FamilyMember name="Mayara" />
+            <FamilyMember name="Eli" />
+          </Family>
         </Card>
         <Card title="#4 - Random Challenge" color="#4E2877">
           <Random min={1} max={60} />
