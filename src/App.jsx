@@ -5,6 +5,7 @@ import Random from "./components/basics/Random";
 import First from "./components/basics/First";
 import WithParam from "./components/basics/WithParam";
 import Fragment from "./components/basics/Fragment";
+import Family from "./components/basics/Family";
 
 export default (_) => {
   return (
@@ -12,6 +13,9 @@ export default (_) => {
       <h1>React fundaments 2</h1>
 
       <div className="Cards">
+        <Card title="#5 - Family Member" color="#C14644">
+          <Family family="Oliveira"></Family>
+        </Card>
         <Card title="#4 - Random Challenge" color="#4E2877">
           <Random min={1} max={60} />
         </Card>
