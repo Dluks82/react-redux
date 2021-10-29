@@ -1,0 +1,16 @@
+.ProductsTable table {
+  width: 100%;
+}
+
+.ProductsTable th {
+  background-color: rgb(216, 172, 91);
+  color: #fff;
+}
+
+.ProductsTable .Par {
+  background-color: #ddd;
+}
+
+.ProductsTable .Impar {
+  background-color: #ccc;
+}
