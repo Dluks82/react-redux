@@ -1,0 +1,9 @@
+.Counter button {
+  height: 50px;
+  width: 80px;
+  margin: 15px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  background-color: #83aa30;
+  color: #fff;
+}

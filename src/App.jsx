@@ -1,6 +1,7 @@
 import "./App.css";
 import Card from "./components/layout/Card";
 
+import Counter from "./components/counter/Counter";
 import Input from "./components/form/Input";
 import IndirectFather from "./components/communication/IndirectFather";
 import DirectFather from "./components/communication/DirectFather";
@@ -15,12 +16,16 @@ import WithParam from "./components/basics/WithParam";
 import Random from "./components/basics/Random";
 import First from "./components/basics/First";
 
-const app = (_) => {
+const App = (_) => {
   return (
     <div className="App">
       <h1>React fundaments 2</h1>
 
       <div className="Cards">
+        <Card title="#12 - Counter" color="#53BBF4">
+          <Counter initialNumber={10} step={5} />
+        </Card>
+
         <Card title="#11 - Controlled Component" color="#EB65A0">
           <Input />
         </Card>
@@ -79,4 +84,4 @@ const app = (_) => {
   );
 };
 
-export default app;
+export default App;
