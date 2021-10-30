@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import Buttons from "./Buttons";
 import "./Counter.css";
+import Display from "./Display";
+import StepForm from "./StepForm";
 
 class Counter extends Component {
   state = {
     number: this.props.initialNumber || 0,
-    step: this.props.step || 1,
+    step: 1,
   };
 
   inc = (step) => {
@@ -19,19 +22,19 @@ class Counter extends Component {
     });
   };
 
+  setStep = (newStep) => {
+    this.setState({
+      step: newStep,
+    });
+  };
+
   render() {
     return (
       <div className="Counter">
         <h2>Counter</h2>
-        <p>Value: {this.state.number}</p>
-        <button onClick={(_) => this.dec(this.state.step)}>
-          - {this.state.step}
-        </button>
-        <button onClick={(_) => this.dec(1)}>-</button>
-        <button onClick={(_) => this.inc(1)}>+</button>
-        <button onClick={(_) => this.inc(this.state.step)}>
-          + {this.state.step}
-        </button>
+        <StepForm value={this.state.step} setStep={this.setStep} />
+        <Display number={this.state.number} />
+        <Buttons step={this.state.step} dec={this.dec} inc={this.inc} />
       </div>
     );
   }

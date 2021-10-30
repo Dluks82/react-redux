@@ -23,7 +23,7 @@ const App = (_) => {
 
       <div className="Cards">
         <Card title="#12 - Counter" color="#53BBF4">
-          <Counter initialNumber={10} step={5} />
+          <Counter initialNumber={10} />
         </Card>
 
         <Card title="#11 - Controlled Component" color="#EB65A0">
