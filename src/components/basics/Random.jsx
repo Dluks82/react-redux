@@ -1,4 +1,4 @@
-export default (props) => {
+const random = (props) => {
   const { min, max } = props;
   const random = parseInt(Math.random() * (max - min) + min);
   return (
@@ -16,3 +16,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default random;

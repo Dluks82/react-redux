@@ -1,6 +1,8 @@
 import "./App.css";
 import Card from "./components/layout/Card";
 
+import UserInfo from "./components/conditional/UserInfo";
+import ParOuImpar from "./components/conditional/ParOuImpar";
 import ProductsTable from "./components/repetition/ProductsTable";
 import StudentsList from "./components/repetition/StudentsList";
 import FamilyMember from "./components/basics/FamilyMember";
@@ -16,6 +18,15 @@ const app = (_) => {
       <h1>React fundaments 2</h1>
 
       <div className="Cards">
+        <Card title="#9 - User Info" color="#FDF200">
+          <UserInfo user={{ name: "Diogo" }} />
+          <UserInfo user={{ email: "Diogo" }} />
+        </Card>
+
+        <Card title="#8 - Par or Ímpar" color="#FDF200">
+          <ParOuImpar number={21} />
+        </Card>
+
         <Card title="#7 - Table Challenge" color="#E8BAE3">
           <ProductsTable />
         </Card>

@@ -1,7 +1,6 @@
 import React, { cloneElement } from "react";
 
-export default (props) => {
-  console.log(typeof props.children);
+const family = (props) => {
   return (
     <div>
       {props.children.map((child, i) => {
@@ -10,3 +9,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default family;

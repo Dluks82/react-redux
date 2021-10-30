@@ -1,4 +1,4 @@
-export default [
+const students = [
     { id: 1, name: "Diogo", grade: 10 },
     { id: 2, name: "Mayara", grade: 6.4 },
     { id: 3, name: "Eli", grade: 7.1 },
@@ -9,3 +9,5 @@ export default [
     { id: 8, name: "Maria", grade: 9.7 },
     { id: 9, name: "Joana", grade: 9.3 },
 ]
+
+export default students
