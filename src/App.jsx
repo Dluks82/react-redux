@@ -1,6 +1,7 @@
 import "./App.css";
 import Card from "./components/layout/Card";
 
+import Input from "./components/form/Input";
 import IndirectFather from "./components/communication/IndirectFather";
 import DirectFather from "./components/communication/DirectFather";
 import UserInfo from "./components/conditional/UserInfo";
@@ -20,6 +21,10 @@ const app = (_) => {
       <h1>React fundaments 2</h1>
 
       <div className="Cards">
+        <Card title="#11 - Controlled Component" color="#EB65A0">
+          <Input />
+        </Card>
+
         <Card title="#10 - Indirect Communication" color="#3A9AD9">
           <IndirectFather />
         </Card>
