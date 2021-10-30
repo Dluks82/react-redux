@@ -1,6 +1,7 @@
 import "./App.css";
 import Card from "./components/layout/Card";
 
+import Mega from "./components/draw/Mega";
 import Counter from "./components/counter/Counter";
 import Input from "./components/form/Input";
 import IndirectFather from "./components/communication/IndirectFather";
@@ -22,6 +23,10 @@ const App = (_) => {
       <h1>React fundaments 2</h1>
 
       <div className="Cards">
+        <Card title="#13 - Mega" color="#25AAA0">
+          <Mega />
+        </Card>
+
         <Card title="#12 - Counter" color="#53BBF4">
           <Counter initialNumber={10} />
         </Card>
