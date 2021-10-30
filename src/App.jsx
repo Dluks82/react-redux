@@ -1,6 +1,8 @@
 import "./App.css";
 import Card from "./components/layout/Card";
 
+import IndirectFather from "./components/communication/IndirectFather";
+import DirectFather from "./components/communication/DirectFather";
 import UserInfo from "./components/conditional/UserInfo";
 import ParOuImpar from "./components/conditional/ParOuImpar";
 import ProductsTable from "./components/repetition/ProductsTable";
@@ -18,13 +20,18 @@ const app = (_) => {
       <h1>React fundaments 2</h1>
 
       <div className="Cards">
-        <Card title="#9 - User Info" color="#FDF200">
-          <UserInfo user={{ name: "Diogo" }} />
-          <UserInfo user={{ email: "Diogo" }} />
+        <Card title="#10 - Indirect Communication" color="#3A9AD9">
+          <IndirectFather />
         </Card>
 
-        <Card title="#8 - Par or Ímpar" color="#FDF200">
+        <Card title="#9 - Direct Communication" color="#588C73">
+          <DirectFather />
+        </Card>
+
+        <Card title="#8 - Conditional Render" color="#FDF200">
           <ParOuImpar number={21} />
+          <UserInfo user={{ name: "Diogo" }} />
+          <UserInfo user={{ email: "Diogo" }} />
         </Card>
 
         <Card title="#7 - Table Challenge" color="#E8BAE3">
