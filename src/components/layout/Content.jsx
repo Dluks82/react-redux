@@ -5,6 +5,7 @@ import About from "../../views/examples/About";
 import Param from "../../views/examples/Param";
 import NotFound from "../../views/examples/NotFound";
 import Fundaments from "../../projects/fundaments/Fundaments";
+import Calculator from "../../projects/calculator/main/Calculator";
 
 import "./Content.css";
 
@@ -12,6 +13,9 @@ const Content = (props) => {
   return (
     <main className="content">
       <Switch>
+        <Route path="/calculator">
+          <Calculator />
+        </Route>
         <Route path="/fundaments">
           <Fundaments />
         </Route>

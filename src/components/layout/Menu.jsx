@@ -24,6 +24,9 @@ const Menu = (props) => {
           <li>
             <Link to="/fundaments">Fundaments</Link>
           </li>
+          <li>
+            <Link to="/calculator">Calculator</Link>
+          </li>
         </ul>
       </nav>
     </aside>
